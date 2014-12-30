@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Colored Stories for Trello",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "This extension helps you to distinguish stories with colors",
+    "description": "The description of the application"
+  }
+}
