@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Colored Stories for Trello",
+    "message": "Colored Hashtag for Trello",
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "This extension helps you to distinguish stories with colors",
+    "message": "This extension colors hashtagged cards to easily distinguish them",
     "description": "The description of the application"
   }
 }
