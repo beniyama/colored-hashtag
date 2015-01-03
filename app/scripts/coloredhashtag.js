@@ -52,7 +52,9 @@ function init() {
   ColoredHashtags.observer = new MutationObserver(function (mutations) {
     $.each(mutations, function (index, mutation) {
       var $target = $(mutation.target);
-      if ($target.hasClass('list-card-title')) {
+      var $addedNode = $(mutation.addedNodes[0]);
+
+      if ($target.hasClass('list-card-title') || $addedNode.hasClass('list-card js-member-droppable active-card')) {
         updateCards();
       }
     });
