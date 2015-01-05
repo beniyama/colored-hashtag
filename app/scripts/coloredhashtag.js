@@ -83,19 +83,17 @@ function updateCards() {
 
   $('.list-card-details > .list-card-title:first-child').each(function () {
     var innerSpan = $(this).clone().children('span');
-    var shortId = innerSpan.text();
     var cardTitle = innerSpan.remove().end().text();
+    var $card = $(this).parent(); // .list-card-details to color
 
-    var $card = $(".list-card-details:has(.list-card-title > .card-short-id:contains(" + shortId + "))");
     var hashTags = cardTitle.match(/#[\w-]+/g);
     if (hashTags) {
-      $.each(hashTags, function (idx, hashTag) {
-        if (!hashtagColorMap[hashTag]) {
-          hashtagColorMap[hashTag] = ColoredHashtags.colors[colorIdx % ColoredHashtags.colors.length];
-          colorIdx++;
-        }
-        $card.css('background-color', hashtagColorMap[hashTag]).addClass('colored');
-      });
+      var hashTag = hashTags[0]; // Only use the first hashtag
+      if (!hashtagColorMap[hashTag]) {
+        hashtagColorMap[hashTag] = ColoredHashtags.colors[colorIdx % ColoredHashtags.colors.length];
+        colorIdx++;
+      }
+      $card.css('background-color', hashtagColorMap[hashTag]).addClass('colored');
       hashtagExists = true;
     } else {
       $card.css('background-color', '');
