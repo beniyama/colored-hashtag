@@ -3,9 +3,13 @@ colored-hashtag
 
 This chrome extension colors hashtagged Trello cards to easily distinguish them.
 
+
+![screen shot](https://raw.githubusercontent.com/wiki/beniyama/colored-hashtag/images/screenshot_001.png)
+
 A hashtag is useful to categorize cards e.g, in scrum you may add `#<story id>` to specify to which story belongs. 
 
 This plugin extracts hashtag in a card title and change cards' background color according as it. This feature enhances visibility and you might be able to distinguish cards at a glance.
+
 
 ### Release notes
 
