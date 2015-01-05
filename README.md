@@ -1,8 +1,7 @@
-colored-hashtag
+Colored Hashtag for Trello (Chrome Extension)
 ===============
 
 This chrome extension colors hashtagged Trello cards to easily distinguish them.
-
 
 ![screen shot](https://raw.githubusercontent.com/wiki/beniyama/colored-hashtag/images/screenshot_001.png)
 
