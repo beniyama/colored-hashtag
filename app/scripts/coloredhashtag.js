@@ -54,7 +54,11 @@ function init() {
       var $target = $(mutation.target);
       var $addedNode = $(mutation.addedNodes[0]);
 
-      if ($target.hasClass('list-card-title') || $addedNode.hasClass('list-card js-member-droppable active-card')) {
+      if (
+        $target.hasClass('list-card-title') || // direct title edit
+        $addedNode.hasClass('list-card js-member-droppable active-card') || // card move between lists
+        $addedNode.hasClass('card-composer') // newly added card
+      ) {
         updateCards();
       }
     });
