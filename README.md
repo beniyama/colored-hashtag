@@ -12,6 +12,9 @@ This plugin extracts hashtag in a card title and change cards' background color 
 
 ### Release notes
 
+#### v1.0.4
+* Newly added cards would be colored without refresh the screen
+
 #### v1.0.3
 * Performance improvement
 * Use the first hashtag in a title to align with Plus for Trello behavior
@@ -25,6 +28,5 @@ This plugin extracts hashtag in a card title and change cards' background color 
 ### Limitations
 
 * There are only 10 preset colors, then if you have 10+ hashtags they would share the same color.
-* Hashtags in a new card would not be colored - please reload the page or edit a card's title to refresh.
 * If multiple hashtags are in a title, the former one's color would be applied.
 
