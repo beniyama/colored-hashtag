@@ -85,7 +85,7 @@ function updateCards() {
   var colorIdx = 0;
   var hashtagExists = false;
 
-  $('.list-card-details > .list-card-title:first-child').each(function () {
+  $('.list-card-details > .list-card-title:first-of-type').each(function () {
     var innerSpan = $(this).clone().children('span');
     var cardTitle = innerSpan.remove().end().text();
     var $card = $(this).parent(); // .list-card-details to color
