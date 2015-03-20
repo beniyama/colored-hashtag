@@ -12,6 +12,9 @@ This plugin extracts hashtag in a card title and change cards' background color 
 
 ### Release notes
 
+#### v1.0.5
+* Use more sustainable selector to fetch hashtag in a card's title
+
 #### v1.0.4
 * Newly added cards would be colored without refresh the screen
 
